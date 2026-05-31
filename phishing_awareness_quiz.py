@@ -15,7 +15,7 @@ phishing_keywords = [
 
 def analyze_message(message):
     message = message.lower()
-
+    
     # Remove extra spaces/newlines
     message = re.sub(r'\s+', ' ', message)
 
