@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "type": "Email Phishing",
+    "sender": "support@mybank-secure.com",
+    "subject": "Urgent: Verify Your Account Information",
+    "content": "Dear Valued Customer, We have detected unusual activity on your account. To protect your funds, please verify your account information immediately by clicking the link below: https://mybank-secure.com/verify?account=12345",
+    "red_flags": [
+      "Generic greeting (Dear Valued Customer)",
+      "Urgency tactics",
+      "Suspicious domain (mybank-secure.com)",
+      "Asks to click a link"
+    ],
+    "is_phishing": true
+  },
+  {
+    "id": 2,
+    "type": "Email Phishing",
+    "sender": "security@paypai.com",
+    "subject": "Your PayPal Password Needs Resetting",
+    "content": "Hello, Your PayPal password has expired. Please reset it immediately by clicking here: http://paypai-login.com/reset?user=johndoe",
+    "red_flags": [
+      "Typo-squatting domain (paypai.com instead of paypal.com)",
+      "Fake security alert",
+      "Suspicious link"
+    ],
+    "is_phishing": true
+  },
+  {
+    "id": 3,
+    "type": "Smishing",
+    "sender": "+1 (555) 123-4567",
+    "subject": "N/A (SMS)",
+    "content": "Your Amazon package delivery is delayed. Click to update your shipping information: https://amazon-update.com/track?id=987654",
+    "red_flags": [
+      "Smishing (SMS) attack",
+      "Fake delivery update",
+      "Suspicious link"
+    ],
+    "is_phishing": true
+  },
+  {
+    "id": 4,
+    "type": "Spear Phishing",
+    "sender": "hr@companyname.com",
+    "subject": "Important: Update Your Direct Deposit Information",
+    "content": "Dear Team, We are updating our payroll system. Please click the link below to verify and update your direct deposit details by EOD Friday: https://company-payroll-update.com/direct-deposit",
+    "red_flags": [
+      "Spear phishing (targeted attack)",
+      "Spoofed HR email",
+      "Asks for financial information"
+    ],
+    "is_phishing": true
+  },
+  {
+    "id": 5,
+    "type": "Vishing",
+    "sender": "Unknown (Phone Call)",
+    "subject": "N/A (Phone Call)",
+    "content": "Hello, this is Microsoft Support. We've detected a virus on your computer. To fix it, we need you to download our security software from https://microsoft-fixit.com and enter your credit card to pay for the service.",
+    "red_flags": [
+      "Vishing (phone call) attack",
+      "Tech support scam",
+      "Asks for credit card information"
+    ],
+    "is_phishing": true
+  }
+]
+
